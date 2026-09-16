@@ -1,8 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        Dispositivo sensorPrincipal = new Dispositivo("Sensor de Temperatura", true);
+        Proyector proyector = new Proyector("Proyector Sala 201", true);
+        Computador computador = new Computador("PC Laboratorio", true);
+        Impresora impresora = new Impresora("Impresora Biblioteca", false);
 
-        sensorPrincipal.mostrarEstado();
-        sensorPrincipal.ejecutarDiagnostico();
+        proyector.mostrarEstado();
+        computador.mostrarEstado();
+        impresora.mostrarEstado();
     }
 }
